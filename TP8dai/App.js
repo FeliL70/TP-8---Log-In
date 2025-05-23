@@ -7,11 +7,12 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
+  SafeAreaView,
 } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="light" />
 
       <Image
@@ -43,7 +44,7 @@ export default function App() {
       <TouchableOpacity>
         <Text style={styles.link}>Crear Cuenta</Text>
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -52,11 +53,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#065cab",
     alignItems: "center",
-    paddingTop: 50,
+    paddingTop: 10, 
+    justifyContent:"center"
   },
   foto: {
     width: "90%",
-    height: undefined,
+    height: 150,
     aspectRatio: 10,
     marginVertical: 10,
   },
